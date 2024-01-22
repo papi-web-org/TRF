@@ -50,5 +50,9 @@ def _parse_tournament(lines):
         if line.startswith('XX'):
             field, value = line.split(' ', 1)
             tournament.xx_fields[field] = value.strip()
+            
+        elif line.startswith('BB'):
+            field, value = line.split(' ', 1)
+            tournament.bb_fields[field] = value.strip()
 
     return tournament
