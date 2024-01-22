@@ -27,6 +27,7 @@ class Tournament(object):
     players: List[Player] = field(default_factory=list) 
     teams: List[str] = field(default_factory=list) 
     xx_fields: Dict[str, str] = field(default_factory=dict)
+    bb_fields: Dict[str, str] = field(default_factory=dict)
 
     @property
     def numrounds(self):
