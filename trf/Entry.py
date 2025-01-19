@@ -61,7 +61,7 @@ class SingleLineListEntry(SingleLineEntry):
         tournament.__dict__[self.fieldname] = value
 
 
-PLAYER_LINE_PATTERN = re.compile(r'^(?P<startrank>[ \d]{4}) (?P<sex>[\w ]) (?P<title>[\w ]{2}) (?P<name>.{33}) (?P<rating>[ \d]{4}) (?P<fed>[\w ]{3}) (?P<id>[ \d]{11}) (?P<birthdate>.{10}) (?P<points>[ \d.]{4}) (?P<rank>[ \d]{4})(?P<games>(  [ \d]{4} [bsw\- ] [1=0+wdl\-hfuz ]| {10})*)\s*$', re.IGNORECASE)
+PLAYER_LINE_PATTERN = re.compile(r'^(?P<startrank>[ \d]{4}) (?P<sex>[\w ]) (?P<title>[\w ]{3}) (?P<name>.{33}) (?P<rating>[ \d]{4}) (?P<fed>[\w ]{3}) (?P<id>[ \d]{11}) (?P<birthdate>.{10}) (?P<points>[ \d.]{4}) (?P<rank>[ \d]{4})(?P<games>(  [ \d]{4} [bsw\- ] [1=0+wdl\-hfuz ]| {10})*)\s*$', re.IGNORECASE)
 
 
 class PlayerEntry(TrfEntry):
