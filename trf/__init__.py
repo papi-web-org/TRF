@@ -37,6 +37,9 @@ def _dump_tournament(fp, tournament):
     for field, value in tournament.xx_fields.items():
         fp.write(f'{field} {value}\n')
 
+    for field, value in tournament.bb_fields.items():
+        fp.write(f'{field} {value}\n')
+
 
 def _parse_tournament(lines):
     tournament = Tournament()
